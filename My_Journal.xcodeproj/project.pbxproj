@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,14 @@
 		21F34C9822E6F17100EA2320 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F34C9622E6F17100EA2320 /* Main.storyboard */; };
 		21F34C9A22E6F17200EA2320 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21F34C9922E6F17200EA2320 /* Assets.xcassets */; };
 		21F34C9D22E6F17200EA2320 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F34C9B22E6F17200EA2320 /* LaunchScreen.storyboard */; };
+		21F34CA622E6F42200EA2320 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F34CA522E6F42200EA2320 /* NetworkManager.swift */; };
+		21F34CA822E6F53A00EA2320 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F34CA722E6F53A00EA2320 /* APIService.swift */; };
+		21F34CAA22E6FCBB00EA2320 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F34CA922E6FCBB00EA2320 /* BaseService.swift */; };
+		21F34CAD22E6FF5900EA2320 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F34CAC22E6FF5900EA2320 /* Post.swift */; };
+		21F34CB022E703AC00EA2320 /* PostsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F34CAF22E703AC00EA2320 /* PostsService.swift */; };
+		21F34CB422E706E500EA2320 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F34CB322E706E500EA2320 /* Connectivity.swift */; };
+		21F34CB722E7140500EA2320 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F34CB622E7140500EA2320 /* PostViewModel.swift */; };
+		BC9CBB7B0CEA3945C145F30B /* Pods_My_Journal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38ABE1953E5DFB9437E5036 /* Pods_My_Journal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,16 @@
 		21F34C9922E6F17200EA2320 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21F34C9C22E6F17200EA2320 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21F34C9E22E6F17200EA2320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21F34CA522E6F42200EA2320 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		21F34CA722E6F53A00EA2320 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		21F34CA922E6FCBB00EA2320 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		21F34CAC22E6FF5900EA2320 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		21F34CAF22E703AC00EA2320 /* PostsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsService.swift; sourceTree = "<group>"; };
+		21F34CB322E706E500EA2320 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		21F34CB622E7140500EA2320 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		6A0D62898D16160B56AF5249 /* Pods-My_Journal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_Journal.debug.xcconfig"; path = "Target Support Files/Pods-My_Journal/Pods-My_Journal.debug.xcconfig"; sourceTree = "<group>"; };
+		F13F7ADC9F65015E56CA18D7 /* Pods-My_Journal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_Journal.release.xcconfig"; path = "Target Support Files/Pods-My_Journal/Pods-My_Journal.release.xcconfig"; sourceTree = "<group>"; };
+		F38ABE1953E5DFB9437E5036 /* Pods_My_Journal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Journal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC9CBB7B0CEA3945C145F30B /* Pods_My_Journal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +59,8 @@
 			children = (
 				21F34C9122E6F17100EA2320 /* My_Journal */,
 				21F34C9022E6F17100EA2320 /* Products */,
+				A5ABE1B17B432AC5AA30CBE3 /* Pods */,
+				3813750D03D1194E726E7095 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +75,9 @@
 		21F34C9122E6F17100EA2320 /* My_Journal */ = {
 			isa = PBXGroup;
 			children = (
+				21F34CB522E7101200EA2320 /* ViewModels */,
+				21F34CAB22E6FF3D00EA2320 /* Models */,
+				21F34CA422E6F35600EA2320 /* Service */,
 				21F34C9222E6F17100EA2320 /* AppDelegate.swift */,
 				21F34C9422E6F17100EA2320 /* ViewController.swift */,
 				21F34C9622E6F17100EA2320 /* Main.storyboard */,
@@ -64,6 +88,51 @@
 			path = My_Journal;
 			sourceTree = "<group>";
 		};
+		21F34CA422E6F35600EA2320 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				21F34CA522E6F42200EA2320 /* NetworkManager.swift */,
+				21F34CA722E6F53A00EA2320 /* APIService.swift */,
+				21F34CA922E6FCBB00EA2320 /* BaseService.swift */,
+				21F34CAF22E703AC00EA2320 /* PostsService.swift */,
+				21F34CB322E706E500EA2320 /* Connectivity.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		21F34CAB22E6FF3D00EA2320 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				21F34CAC22E6FF5900EA2320 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		21F34CB522E7101200EA2320 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				21F34CB622E7140500EA2320 /* PostViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3813750D03D1194E726E7095 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F38ABE1953E5DFB9437E5036 /* Pods_My_Journal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5ABE1B17B432AC5AA30CBE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A0D62898D16160B56AF5249 /* Pods-My_Journal.debug.xcconfig */,
+				F13F7ADC9F65015E56CA18D7 /* Pods-My_Journal.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21F34CA122E6F17200EA2320 /* Build configuration list for PBXNativeTarget "My_Journal" */;
 			buildPhases = (
+				67030889CE7A0CB4E44D3431 /* [CP] Check Pods Manifest.lock */,
 				21F34C8B22E6F17100EA2320 /* Sources */,
 				21F34C8C22E6F17100EA2320 /* Frameworks */,
 				21F34C8D22E6F17100EA2320 /* Resources */,
+				43C454669477F29DE305C43C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +201,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		43C454669477F29DE305C43C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My_Journal/Pods-My_Journal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My_Journal/Pods-My_Journal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-My_Journal/Pods-My_Journal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67030889CE7A0CB4E44D3431 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-My_Journal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		21F34C8B22E6F17100EA2320 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21F34CA622E6F42200EA2320 /* NetworkManager.swift in Sources */,
 				21F34C9522E6F17100EA2320 /* ViewController.swift in Sources */,
+				21F34CB022E703AC00EA2320 /* PostsService.swift in Sources */,
+				21F34CA822E6F53A00EA2320 /* APIService.swift in Sources */,
+				21F34CB422E706E500EA2320 /* Connectivity.swift in Sources */,
+				21F34CAD22E6FF5900EA2320 /* Post.swift in Sources */,
+				21F34CB722E7140500EA2320 /* PostViewModel.swift in Sources */,
+				21F34CAA22E6FCBB00EA2320 /* BaseService.swift in Sources */,
 				21F34C9322E6F17100EA2320 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +400,7 @@
 		};
 		21F34CA222E6F17200EA2320 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A0D62898D16160B56AF5249 /* Pods-My_Journal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +419,7 @@
 		};
 		21F34CA322E6F17200EA2320 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F13F7ADC9F65015E56CA18D7 /* Pods-My_Journal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
